@@ -11,6 +11,11 @@ import android.widget.LinearLayout;
 public class MainActivity extends AppCompatActivity {
     LinearLayout ll;
 
+    public boolean onCreateOptionsMenu (Menu menu){
+        getMenuInflater().inflate (R.menu.main,menu);
+
+        return true;
+    }
 
 
 
@@ -21,10 +26,7 @@ public class MainActivity extends AppCompatActivity {
         ll=(LinearLayout)findViewById(R.id.ll);
     }
 
-    public boolean onCreateOptionsMenu(Menu menu){
-        getMenuInflater().inflate (R.menu.main,menu);
-        return true;
-    }
+
 
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
